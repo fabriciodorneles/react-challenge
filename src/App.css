@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+    background-color: #055036;
+    line-height: 100px;
+    margin-top: 18px;
+}
+
+
+
+
+.middleContainer {
+    margin-top: 30px;
+    display: flex;
+    column-gap: 14px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.inputContainer input {
+    border-radius: 3px;
+    border: 0;
+    height: 26px;
+}
+
+.inputContainer label {
+    font-weight: 600;
+}
+
+.footerContainer {
+    padding-top: 22px;
+}
+
