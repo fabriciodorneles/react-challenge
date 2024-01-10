@@ -9,11 +9,11 @@ function App() {
       <div className="middleContainer">
         <div className="inputContainer">
           <label>First Name</label>
-          <input className="nameInput" />
+          <input />
         </div>
         <div className="inputContainer">
           <label>Last Name</label>
-          <input className="nameInput" />
+          <input />
         </div>
       </div>
       <div className="footerContainer">
