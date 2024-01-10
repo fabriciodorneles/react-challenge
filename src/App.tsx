@@ -1,7 +1,6 @@
 import './App.css'
 
 function App() {
-
   return (
     <>
       <h1>Breaking</h1>
@@ -17,9 +16,7 @@ function App() {
         </div>
       </div>
       <div className="footerContainer">
-        <button >
-          Breakify
-        </button>
+        <button>Breakify</button>
       </div>
     </>
   )
