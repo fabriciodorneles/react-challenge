@@ -2,7 +2,14 @@
 ## Fabricio Dorneles
 ## Project Overview
 
-The project implements a page with a specific style and format, highlighting elements from the periodic table based on inputted first and last names. It utilizes React, Redux, Redux-Thunk, and ESLint for code quality.
+The project implements a page with a specific style and format, highlighting elements from the periodic table based on inputted first and last names. It utilizes React, Redux, Redux-Thunk, and ESLint for code quality.  
+
+![image](https://github.com/fabriciodorneles/react-challenge/assets/64965851/4f9db5e3-ff25-496d-aade-b875566295c3)
+
+1. The App starts with "Breaking Bad" text highlighted.
+2. When the user fill the inputs and
+3. click in the "Breakify" button
+4. The new text from the inputs appears, highlighted if has some match with the periodic table.
 
 ## Instructions
 
@@ -12,6 +19,11 @@ The project implements a page with a specific style and format, highlighting ele
   ```bash
   git clone https://github.com/fabriciodorneles/react-challenge
   cd react-challenge
+  ```
+
+2. **Install Deps:**
+  ```bash
+  npm install
   ```
 
 2. **Execute the project:**
