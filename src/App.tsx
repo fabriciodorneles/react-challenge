@@ -39,15 +39,18 @@ const App: React.FC = () => {
       </h1>
       <div className="middleContainer">
         <div className="inputContainer">
-          <label>First Name</label>
+          <label htmlFor="firstName">First Name</label>
           <input
+            id="firstName"
+            data-testid="firstName"
             onChange={(e) => setFirstName(e.target.value)}
             value={firstName}
           />
         </div>
         <div className="inputContainer">
-          <label>Last Name</label>
+          <label htmlFor="lastName">Last Name</label>
           <input
+            id="lastName"
             onChange={(e) => setLastName(e.target.value)}
             value={lastName}
           />
