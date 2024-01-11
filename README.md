@@ -1,7 +1,5 @@
 # React Challenge - Breakify App
 ## Fabricio Dorneles
- This project is a React web application that meets the specified requirements outlined in the challenge. Below are the details on how to set up, run the project, and additional information.
-
 ## Project Overview
 
 The project implements a page with a specific style and format, highlighting elements from the periodic table based on inputted first and last names. It utilizes React, Redux, Redux-Thunk, and ESLint for code quality.
@@ -17,7 +15,7 @@ The project implements a page with a specific style and format, highlighting ele
   ```
 
 2. **Execute the project:**
-  ``bash
+  ```bash
   npm run dev
   ```
 
