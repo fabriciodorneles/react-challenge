@@ -22,3 +22,24 @@ The project implements a page with a specific style and format, highlighting ele
 ## Git Hub pages
 The project is hosted in the URL:
 https://fabriciodorneles.github.io/react-challenge/
+
+## Tests
+1. **To Run tests**
+  ```bash
+  npm run test
+  ```
+
+  ```bash
+  PASS  src/App.test.tsx
+  Breakify App
+    √ should render correctly (57 ms)
+    √ should initialize highlight correctly (13 ms)
+    √ should change words and highlight when user change input and click in button (332 ms)   
+
+  Test Suites: 1 passed, 1 total
+  Tests:       3 passed, 3 total
+  Snapshots:   0 total
+  Time:        3.146 s
+  Ran all test suites.
+  Done in 4.36s.
+  ```
