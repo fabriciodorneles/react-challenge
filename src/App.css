@@ -8,9 +8,12 @@
 h1 {
     font-size: 80px;
     margin: 0;
-    background-color: #055036;
     line-height: 100px;
     margin-top: 18px;
+}
+
+.highlighted {
+    background-color: #055036;
 }
 
 .middleContainer {
