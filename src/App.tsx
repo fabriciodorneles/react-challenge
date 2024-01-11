@@ -1,46 +1,28 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { Action } from 'redux'
 
 import './App.css'
-import chemElements from './constants'
+import { setFirstDisplayName, setLastDisplayName } from './actions/appActions'
+import { RootState } from './reducers/rootReducer'
+import { breakify } from './utils/breakify'
 
-function App() {
+const App: React.FC = () => {
+  const dispatch = useDispatch()
+  const { firstDisplayName, lastDisplayName } = useSelector(
+    (state: RootState) => state.app
+  )
+
   const [firstName, setFirstName] = useState('Breaking')
   const [lastName, setLastName] = useState('Bad')
-
-  const [firstDisplayName, setFirstDisplayName] = useState<string[]>(() => [])
-  const [lastDisplayName, setLastDisplayName] = useState<string[]>([])
-
-  const breakify = (
-    str: string,
-    setFunction: React.Dispatch<React.SetStateAction<string[]>>
-  ) => {
-    const result = Array.from(str).some((char, i) => {
-      const oneChar = char.toUpperCase()
-      const twoChar = `${oneChar}${str[i + 1]}`
-
-      if (chemElements.includes(twoChar)) {
-        setFunction([str.slice(0, i), twoChar, str.slice(i + 2)])
-        return [str.slice(0, i), twoChar, str.slice(i + 2)]
-      }
-
-      if (chemElements.includes(oneChar)) {
-        setFunction([str.slice(0, i), oneChar, str.slice(i + 1)])
-        return [str.slice(0, i), oneChar, str.slice(i + 1)]
-      }
-
-      return null
-    })
-
-    return result ? [str, '', ''] : result
-  }
 
   useEffect(() => {
     handleBreakify()
   }, [])
 
   const handleBreakify = () => {
-    breakify(firstName, setFirstDisplayName)
-    breakify(lastName, setLastDisplayName)
+    dispatch<Action>(setFirstDisplayName(breakify(firstName)))
+    dispatch<Action>(setLastDisplayName(breakify(lastName)))
   }
 
   return (
