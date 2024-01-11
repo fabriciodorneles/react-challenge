@@ -36,13 +36,12 @@
     "import-helpers/order-imports": [
       "warn",
       {
-        "newlinesBetween": "always", // new line between groups
+        "newlinesBetween": "always", 
         "groups": [
           "module",
           [
             "/^components/",
             "/^types/"
-            // tu pode colocar todos os seus folders aqui
           ],
           "/styles.*/",
           ["parent", "sibling", "index"],
